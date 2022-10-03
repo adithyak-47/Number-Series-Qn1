@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'numseries';
+  nom:any;
+
+  findNum = (value:any) =>{
+    if(value%2==0)
+    {
+      this.nom = (value*value)-1;
+    }
+    else
+    {
+      this.nom = (value*value)+1;
+    }
+    
+  }
+
 }
+
